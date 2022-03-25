@@ -7,5 +7,3 @@ NOTE: We do not do the dice rolling, rolling of the dice "happens".
 - Python Test
 
 2. Use the PROJECT.md for directions on how to approach the project. Read carefully, at least through the first iteration.
-
-3. 
