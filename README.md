@@ -21,3 +21,7 @@ Additionally, data models belong in the `evercraft/models` directory.
 ### Running tests
 
 To run tests we will use the `Python Test Explorer for VSCode` that should now be installed in your gitpod. A new beaker icon on the left bar (above github icon) should now appear in your editor. You should see an example test there already for the test `test_upper`. If your editor is not detecting your tests and allowing you to run all or select tests in your tree, please let us know.
+
+### Credit for Project
+
+This project was adapted for the Awesome Inc Bootcamp programe from [this repo](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata)
