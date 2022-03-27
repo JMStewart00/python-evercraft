@@ -1,3 +1,7 @@
+tasks:
+  - name: Install dependencies
+    init: pip install -r requirements.txt
+
 vscode:
   extensions:
     - littlefoxteam.vscode-python-test-adapter
