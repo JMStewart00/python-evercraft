@@ -6,3 +6,5 @@ vscode:
     - ms-python.python
     - hbenl.test-adapter-converter
     - ms-toolsai.jupyter
+image:
+  file: .gitpod.Dockerfile
