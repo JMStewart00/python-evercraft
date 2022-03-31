@@ -20,6 +20,7 @@ def test_characters_combat_involves_two_characters():
 def test_combat_has_resolution_method():
     assert hasattr(Combat, 'resolve') and callable(getattr(Combat, 'resolve'))
 
+
 # As an attacker I want to be able to damage my enemies so that they will die and I will live
 
 # If attack is successful, other character takes 1 point of damage when hit
@@ -33,7 +34,7 @@ def test_combat_resolution_accounts_for_20_on_die():
     combat = Combat(att, defn)
     prevHP = defn.hit_points
     result = combat.resolve(roll)
-    assert defn.hit_points == (prevHP - 10)
+    assert defn.hit_points == (prevHP - Combat.CRITICAL_HIT_MULTIPLIER)
 
 def test_combat_resolution_for_meet_or_beat_opponent_armor():
     roll = 10
@@ -43,7 +44,7 @@ def test_combat_resolution_for_meet_or_beat_opponent_armor():
     combat = Combat(att, defn)
     prevHP = defn.hit_points
     result = combat.resolve(roll)
-    assert defn.hit_points == (prevHP - 5)
+    assert defn.hit_points == (prevHP - Combat.DAMAGE)
 
 def test_combat_resolution_for_less_than_opponent_armor():
     roll = 10

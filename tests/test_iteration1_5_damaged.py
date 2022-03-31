@@ -13,7 +13,7 @@ def test_character_is_alive_after_single_attack():
 
     combat = Combat(att, defn)
     result = combat.resolve(roll)
-    assert defn.is_dead() == True
+    assert defn.is_dead() == False
 
 def test_character_can_die_after_single_attack():
     roll = 20
